@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 1.5rem;
+}
+
+.room-controls {
+    margin-bottom: 1.5rem;
+}
+
+#roomInput {
+    padding: 0.8rem;
+    width: 300px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.button-group {
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin: 0 0.5rem;
+}
+
+#createBtn {
+    background-color: #34a853;
+    color: white;
+}
+
+#createBtn:hover {
+    background-color: #2d8a46;
+}
+
+#joinBtn {
+    background-color: #1a73e8;
+    color: white;
+}
+
+#joinBtn:hover {
+    background-color: #1557b0;
+}
+
+#video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+    min-height: 300px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #000;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.local-video {
+    transform: scaleX(-1);
+}
+
+.controls {
+    margin-top: 1rem;
+}
+
+#muteBtn, #cameraBtn {
+    background-color: #f1f3f4;
+    color: #5f6368;
+}
+
+#muteBtn:hover, #cameraBtn:hover {
+    background-color: #e8eaed;
+}
+
+#leaveBtn {
+    background-color: #ea4335;
+    color: white;
+}
+
+#leaveBtn:hover {
+    background-color: #d33426;
+}
+
+#status {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status.error {
+    background-color: #fce8e6;
+    color: #d93025;
+}
+
+.status.success {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+
+.status.info {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}

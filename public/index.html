@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zoom-like Meeting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Video Meeting</h1>
+        <div class="room-controls">
+            <input type="text" id="roomInput" placeholder="Enter Room ID" />
+            <div class="button-group">
+                <button id="createBtn">Create Room</button>
+                <button id="joinBtn">Join Room</button>
+            </div>
+        </div>
+        <div id="status"></div>
+        <div id="video-container"></div>
+        <div class="controls">
+            <button id="muteBtn">Mute</button>
+            <button id="cameraBtn">Turn Off Camera</button>
+            <button id="leaveBtn">Leave Room</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
